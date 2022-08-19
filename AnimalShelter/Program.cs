@@ -21,7 +21,6 @@ namespace AnimalShelter
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://localhost:5004/");
                 });
     }
 }

@@ -15,8 +15,8 @@ using AnimalShelter.Wrappers;
 namespace AnimalShelter.Controllers
 
 {
-    [ApiVersion("1.0")]
-    [Route("api/{m:apiVersion}/Animals")]
+    // [ApiVersion("1.0")]
+    [Route("api/[controller]")]
     public class AnimalsV1Controller : Controller
     {
         private readonly AnimalShelterContext db;
@@ -45,7 +45,7 @@ namespace AnimalShelter.Controllers
             return Ok(pagedResponse);
         }
     }
-    [ApiVersion("2.0")]
+    // [ApiVersion("2.0")]
     [Route("api/[controller]")]
     [ApiController]
     public class AnimalsController : ControllerBase
